@@ -10,8 +10,8 @@ require 'pry'
 
 def get_the_min(groceries)
   items = []
-  groceries.each do |k value|
-    value.each { |i| itams << i }
+  groceries.values do |list|
+    list.each { |i| itams << i }
   end
   items.min
 end
